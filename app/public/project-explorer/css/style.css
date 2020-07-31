@@ -1,49 +1,31 @@
-.jumbotron .container {
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
     max-width: 40rem;
-}
-@media (min-width: 768px) {}
-.container, .container-md, .container-sm {
-    max-width: 720px;
-}
-@media (min-width: 576px) {}
-.container, .container-sm {
-    max-width: 540px;
-}
-@media (min-width: 768px) {}
-.container {
-    max-width: 720px;
-}
-@media (min-width: 576px) {}
-.container {
-    max-width: 540px;
-}
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-.text-center {
-    text-align: center!important;
-}
-
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+  }
+  
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
