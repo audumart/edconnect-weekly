@@ -1,58 +1,90 @@
-<html>
-    <head>
-        <title>Register</title>
-    </head>
-
-    <body>
-        
-        <header>
-            <h1>Project Explorer</h1>
-            <h3>One stop database for final year projects</h3>
-        </header>
-
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="login.html">Login</a>
-            <a href="signup.html">Register</a>
-        </nav>
-
-        <main>
-            <h3>Sign Up</h3>
-
-            <form action="login.html" method="post">
-
-                    <p>First Name: <input type="text"></p>
-            <p>Last Name: <input type="text"></p>
-            <p>Email Address: <input type="text"></p>
-            <p>Password: <input type="password"></p>
-            <p>Matric Number <input type="text"></p>
-            <p>Program <select name="program" id="program">  
-                <option value="computer science">Computer Science</option>
-                <option value="computer information systems">Computer Information Systems</option>
-                <option value="computer technology">Computer Technology</option>
-                </select>
-            </p>
-            <p> Year of Graduation: <select name="yearofgrad" id="yearofgrad">
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-
-                </select>
-            </p>
-            
-            
-        
-            <input type="submit">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+                <button class="btn btn-search text-white my-2 my-sm-0" type="submit">Search</button>
             </form>
-
-        
-
-        </main>
-
-
-
-
-    </body>
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+    </nav>
+    <main>
+        <form class="usr col-8" style="max-width: 880px;">
+            <h1>Sign Up</h1>
+            <br>
+            <div class="form-group col-6">
+                <label for="fname">First Name</label>
+                <input class="form-control" type="text" id="fname" placeholder="First Name" required> 
+            </div>
+            <div class="form-group col-6">
+                <label for="lname">Last Name</label>
+                <input class="form-control" type="text" id="lname" placeholder="Last Name" required>
+            </div>
+            <div class="form-group col-6">
+                <label for="email">Email Address</label>
+                <input class="form-control" type="email" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group col-6">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group col-6">
+                <label for="program">Program</label>
+                <div class="dropdown">
+                    <select class="btn btn-primary dropdown-toggle text-left" name="program" id="program" style="background-color: rgba(57,135,253,0);text-align: left;color: #505e6c;">
+                        <div class="dropdown-menu" role="menu">
+                            <option class="dropdown-item" value="default" selected disabled>Choose...</option>
+                            <option class="dropdown-item" value="cs">Computer Science</option>
+                            <option class="dropdown-item" value="cis">Computer Information Systems</option>
+                            <option class="dropdown-item" value="ct">Computer Technology</option>
+                        </div>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-3">
+                <label for="matric">Matriculation number</label>
+                <input class="form-control" type="text" placeholder="e.g 16/2020" required>
+            </div>
+            <div class="form-group col-3">
+                <label for="year">Graduation Year</label>
+                <div class="dropdown">
+                    <select class="btn btn-primary dropdown-toggle text-left" name="year" id="year" style="background-color: rgba(57,135,253,0);text-align: left;color: #505e6c;">
+                        <div class="dropdown-menu" role="menu">
+                            <option class="dropdown-item" value="default" selected disabled>Choose...</option>
+                            <option class="dropdown-item" value="2015">2015</option>
+                            <option class="dropdown-item" value="2016">2016</option>
+                            <option class="dropdown-item" value="2017">2017</option>
+                            <option class="dropdown-item" value="2018">2018</option>
+                            <option class="dropdown-item" value="2019">2019</option>
+                            <option class="dropdown-item" value="2020">2020</option>
+                            <option class="dropdown-item" value="2021">2021</option>
+                        </div>
+                    </select>
+                </div>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Sign Up">
+        </form>
+        <footer class="col-9">
+            <p>Project Explorer © 2020 - <strong>Edconnect</strong></p>
+        </footer>
+    </main>
+</body>
 </html>
