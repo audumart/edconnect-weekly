@@ -122,6 +122,10 @@ footer {
   font-weight: 600;
 }
 
+.usr button{
+  margin-left: 15px;
+}
+
 .form-group {
   float: left;
 }
@@ -132,4 +136,59 @@ footer {
   height: 40px;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+}
+
+.row.details {
+  background-color: #ebebeb;
+  margin-top: 10px;
+  max-height: 75px;
+  padding: 15px;
+}
+
+h1 span {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.profile {
+  margin-top: 50px;
+}
+
+.edit {
+  max-width: 700px;
+  width: 90%;
+  margin: 35px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+  font-weight: 600;
+}
+.edit button{
+  margin-left: 15px;
+}
+
+.edit .files {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+}
+
+thead {
+  background-color: #f6f6f6;
+}
+
+td {
+    font-weight: 300;
+}
+
+.tags {
+  background-color: #f6f6f6;
+  color: rgb(0, 123, 225);
+}
+
+ul li a b {
+  color: #ffffff;
+  font-weight: 500;
 }
