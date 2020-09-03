@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Search</title>
+    <title>Home Page</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
@@ -24,83 +24,63 @@
                     <li class="nav-item"><a class="nav-link" href="createProject.html">Submit</a></li>
                 </ul>
                 <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Signed in as: <b class="text-white">Ade Ade</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
                 </ul>
             </div>
     </nav>
     <main class="p-4">
-        <div class="container my-4 mb-4">
-            <h3>Project Gallery</h3>
-            <form class="row m-auto p-2" style="background-color: #e9ecef;">
-                <div class="form-group col-8 my-2">
-                    <input type="text" class="form-control form-control-lg" id="project-seacrh" placeholder="Search project name, authors, abstract, tags">
-                </div>
-                <div class="form-group my-2">
-                    <span class="input-group-text form-control form-control-lg">Search by</span>
-                </div>
-                <div class="form-group my-2">
-                    <div class="dropdown">
-                        <select class="btn bg-white dropdown-toggle text-left form-control form-control-lg" name="search" id="search">
-                            <div class="dropdown-menu" role="menu">
-                                <option class="dropdown-item" value="name" selected>Name</option>
-                                <option class="dropdown-item" value="authors">Authors</option>
-                                <option class="dropdown-item" value="abstract">Abstract</option>
-                                <option class="dropdown-item" value="tags">Tags</option>
-                            </div>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group my-2">
-                    <button class="btn btn-primary btn-lg ml-2" type="button">Submit</button>
-                </div>
-            </form>
+        <div class="jumbotron col-9 m-auto">
+            <h1>Welcome to Project Explorer</h1>
+            <p>Project Explorer is a repository for final year projects across all departments at your institution. You can submit your project and search projects submitted by others to learn from.<br></p>
+            <p>
+                <a class="btn btn-primary" role="button" href="register.html">Get Started</a>
+                <a class="btn btn-secondary" role="button" href="login.html">Login</a>
+            </p>
         </div>
         <div class="container col-9 my-4 mb-4">
-            <h5>All Projects<small class="text-muted ml-2">(4 results)</small></h5>
-            <br>
             <div class="row">
-                <div class="col-3 col">
+                <div class="col-3 ">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title"><a href="#">Project 4</a></h4>
                             <h6 class="text-muted card-subtitle mb-2">Henry James, Bola Ade</h6>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-                            <a class="card-link" href="#">#yaml,</a>
-                            <a class="card-link" href="#">#ejs</a>
+                            <a href="#">#yaml, </a>
+                            <a href="#">#ejs</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col">
+                <div class="col-3 ">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title"><a href="#">Project 3</a></h4>
                             <h6 class="text-muted card-subtitle mb-2">Ben Rice, Ade Sola</h6>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-                            <a class="card-link" href="#">#css,</a>
-                            <a class="card-link" href="#">#html</a>
+                            <a href="#">#css, </a>
+                            <a href="#">#html</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col">
+                <div class="col-3 ">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title"><a href="#">Project 2</a></h4>
                             <h6 class="text-muted card-subtitle mb-2">Fried Lim, Tola Daniel</h6>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-                            <a class="card-link" href="#">#ejs,</a>
-                            <a class="card-link" href="#">#ci</a>
+                            <a href="#">#ejs, </a>
+                            <a href="#">#ci</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col">
+                <div class="col-3 ">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title"><a href="#">Project 1</a></h4>
                             <h6 class="text-muted card-subtitle mb-2">James Li, Ade Brian</h6>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliq</p>
-                            <a class="card-link" href="#">#javascript,</a>
-                            <a class="card-link" href="#">#mongodb</a>
+                            <a href="#">#javascript, </a>
+                            <a href="#">#mongodb</a>
                         </div>
                     </div>
                 </div>
